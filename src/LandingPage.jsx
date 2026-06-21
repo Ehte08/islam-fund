@@ -8,7 +8,7 @@ export default function LandingPage() {
 
   return (
     <div
-      className="min-h-[100dvh] w-full overflow-x-hidden"
+      className="min-h-[100dvh] md:h-[100dvh] w-full overflow-x-hidden md:overflow-hidden"
       style={{ background: 'linear-gradient(160deg, var(--c-bg) 0%, oklch(13% 0.025 232) 60%, oklch(12% 0.03 240) 100%)' }}
     >
       {/* Liquid fluid background */}
@@ -27,7 +27,7 @@ export default function LandingPage() {
         />
       </div>
       {/* All page content sits above the fluid bg */}
-      <div style={{ position: 'relative', zIndex: 1 }}>
+      <div style={{ position: 'relative', zIndex: 1 }} className="md:h-full md:flex md:flex-col">
       {/* Skip-to-content — visible on keyboard focus */}
       <a
         href="#main-content"
@@ -38,7 +38,7 @@ export default function LandingPage() {
       </a>
 
       {/* ── Main content ──────────────────────────────────── */}
-      <main id="main-content">
+      <main id="main-content" className="md:flex-1 md:flex md:flex-col md:justify-center">
 
         {/* ── Hero ──────────────────────────────────────── */}
         <section
@@ -176,7 +176,7 @@ export default function LandingPage() {
                 </span>
                 <span className="text-sm" style={{ color: 'var(--c-ink-subtle)' }} aria-hidden="true">·</span>
                 <span className="text-sm" style={{ color: 'var(--c-muted)' }}>
-                  <strong className="text-white font-bold">$500M+</strong> in Funding connections
+                  <strong className="text-white font-bold">$500M+</strong> in Funding Connections
                 </span>
               </div>
             </div>
@@ -235,7 +235,7 @@ export default function LandingPage() {
 
       {/* ── Palestine Badge ──────────────────────────────── */}
       <div
-        className="fixed bottom-5 right-5 z-50 flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold shadow-lg fade-in fade-in-d6"
+        className="fixed top-5 right-5 z-50 flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold shadow-lg fade-in fade-in-d6"
         style={{
           background: 'rgba(0,0,0,0.75)',
           border: '1px solid rgba(34,197,94,0.5)',
