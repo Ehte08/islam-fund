@@ -38,7 +38,7 @@ export default function LandingPage() {
       </a>
 
       {/* ── Main content ──────────────────────────────────── */}
-      <main id="main-content" className="md:flex-1 md:flex md:flex-col md:justify-center">
+      <main id="main-content" className="md:flex-1 md:flex md:flex-col md:justify-center md:min-h-0 md:overflow-hidden">
 
         {/* ── Hero ──────────────────────────────────────── */}
         <section
@@ -60,20 +60,20 @@ export default function LandingPage() {
 
             {/* Left column — text */}
             <div
-              className="flex flex-col justify-center py-14 md:py-8 md:pr-8"
+              className="hero-text-col flex flex-col justify-center py-14 md:py-8 md:pr-8"
               style={{ background: 'radial-gradient(ellipse 80% 120% at 30% 50%, rgba(7,12,20,0.6) 0%, transparent 100%)' }}
             >
 
               {/* Eyebrow */}
               <p
-                className="text-xs font-semibold tracking-[0.18em] uppercase mb-6 fade-in fade-in-d1"
+                className="hero-eyebrow text-xs font-semibold tracking-[0.18em] uppercase mb-6 fade-in fade-in-d1"
                 style={{ color: 'var(--c-brand)' }}
               >
                 Financing &amp; Consulting for Entrepreneurs since 2018
               </p>
 
               {/* H1 — logo image */}
-              <h1 className="m-0 mb-8 fade-in fade-in-d2" style={{ maxWidth: '560px' }}>
+              <h1 className="hero-title m-0 mb-8 fade-in fade-in-d2" style={{ maxWidth: '560px' }}>
                 <img
                   src="/project-blue-adopters.webp"
                   alt="Project Blue Adopters"
@@ -88,7 +88,7 @@ export default function LandingPage() {
 
               {/* Tech-mono blurb */}
               <p
-                className="font-tech neon-blurb leading-relaxed mb-6 fade-in fade-in-d3"
+                className="hero-blurb font-tech neon-blurb leading-relaxed mb-6 fade-in fade-in-d3"
                 style={{
                   fontSize: 'clamp(0.95rem, 1.2vw, 1.15rem)',
                   letterSpacing: '0.02em',
@@ -102,7 +102,7 @@ export default function LandingPage() {
               </p>
 
               {/* Bullet */}
-              <div className="flex items-start gap-3 mb-10 fade-in fade-in-d4">
+              <div className="hero-bullet flex items-start gap-3 mb-10 fade-in fade-in-d4">
                 <span
                   className="w-2 h-2 rounded-sm flex-shrink-0 mt-1.5"
                   style={{ background: 'linear-gradient(135deg, var(--c-blue), var(--c-brand))' }}
@@ -164,7 +164,7 @@ export default function LandingPage() {
 
               {/* Community proof */}
               <div
-                className="flex flex-wrap items-center gap-x-5 gap-y-2 mt-12 pt-6 fade-in fade-in-d6"
+                className="hero-proof flex flex-wrap items-center gap-x-5 gap-y-2 mt-12 pt-6 fade-in fade-in-d6"
                 style={{ borderTop: '1px solid var(--c-border)' }}
               >
                 <span className="text-sm" style={{ color: 'var(--c-muted)' }}>

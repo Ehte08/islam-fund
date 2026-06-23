@@ -93,6 +93,25 @@ body {
   }
 }
 
+/* ── Viewport-height compression: keep carousel visible 551–739px ── */
+@media (min-width: 768px) and (max-height: 739px) and (min-height: 631px) {
+  .hero-text-col  { padding-top: 12px !important; padding-bottom: 12px !important; }
+  .hero-eyebrow   { margin-bottom: 10px !important; }
+  .hero-title     { margin-bottom: 12px !important; }
+  .hero-blurb     { margin-bottom: 8px !important; }
+  .hero-bullet    { margin-bottom: 8px !important; }
+  .hero-proof     { margin-top: 16px !important; padding-top: 10px !important; }
+}
+
+@media (min-width: 768px) and (max-height: 630px) and (min-height: 551px) {
+  .hero-text-col  { padding-top: 4px !important; padding-bottom: 4px !important; }
+  .hero-eyebrow   { margin-bottom: 4px !important; }
+  .hero-title     { margin-bottom: 6px !important; }
+  .hero-blurb     { margin-bottom: 4px !important; }
+  .hero-bullet    { margin-bottom: 4px !important; }
+  .hero-proof     { margin-top: 8px !important; padding-top: 6px !important; }
+}
+
 /* ── Nav link underline slide ───────────────────────────────── */
 .nav-link {
   position: relative;
